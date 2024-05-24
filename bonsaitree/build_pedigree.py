@@ -102,7 +102,7 @@ def infer_local_pedigrees(
         if seed_pedigree_list_copy and validated_node_set_list_copy:
             seed_pedigree = seed_pedigree_list_copy[0]
             validated_node_set = validated_node_set_list_copy[0]
-            seed_pedigree_list_copy = seed_pedigree_list_copy[1:]
+            seed_pedigree_list_copy = seed_pedigree_list[1:]
             validated_node_set_list_copy = validated_node_set_list_copy[1:]
 
         build_succeeded = local_ped_builder.make_draft_pedigree(
